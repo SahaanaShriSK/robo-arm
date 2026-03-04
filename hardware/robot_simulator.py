@@ -11,7 +11,7 @@ import pybullet as p
 import pybullet_data
 
 # ====== ESP CONFIG ======
-ESP_IP = "192.168.62.86"   # ← CHANGE TO YOUR ESP32 IP
+ESP_IP = "172.27.131.184"   # ← CHANGE TO YOUR ESP32 IP
 
 # ====== SIM SETTINGS ======
 SETTLE_STEPS = 50
