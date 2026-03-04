@@ -14,37 +14,6 @@ A PyBullet + CoAP robotic arm that draws text in 3-D.
                                           └─────────────────────┘
 ```
 
-## File structure
-
-| File | Purpose |
-|------|---------|
-| `coap_server.py` | CoAP server – entry point (run first) |
-| `coap_client_ui.py` | Tkinter UI – send text via CoAP |
-| `robot_simulator.py` | PyBullet arm, pen sphere, debug lines |
-| `inverse_kinematics.py` | 2-link planar IK → joint angles |
-| `letter_data.py` | Full A–Z stroke waypoints |
-
-## Installation
-
-```bash
-pip install aiocoap pybullet
-```
-
-## How to run (VS Code / terminal)
-
-**Terminal 1 – Start the server and simulator:**
-```bash
-python coap_server.py
-```
-The PyBullet 3-D window opens automatically.
-
-**Terminal 2 – Open the UI:**
-```bash
-python coap_client_ui.py
-```
-
-Type text (e.g. `HELLO`) and click Send via CoAP.
-
 ## Expected behaviour
 
 1. GUI sends text as a CoAP PUT payload to `127.0.0.1:5683/write`.
