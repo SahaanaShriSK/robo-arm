@@ -16,7 +16,7 @@ from tkinter import ttk, messagebox
 
 from aiocoap import Context, Message, PUT
 
-SERVER_URI = "coap://127.0.0.1/write"
+SERVER_URI = "coap://127.0.0.1:5683/write"   # ← server laptop IP
 
 
 # ── CoAP send (runs in a background thread so Tkinter doesn't freeze) ──────────
